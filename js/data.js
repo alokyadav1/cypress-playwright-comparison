@@ -145,7 +145,9 @@ export const pageTemplates = {
                 <div class="space-y-8">
                     <div>
                         <h4 class="font-bold text-gray-400 uppercase text-[10px] mb-4">Browser Support Matrix</h4>
-                        <canvas id="browserChart"></canvas>
+                        <div class="chart-container">
+                            <canvas id="browserChart"></canvas>
+                        </div>
                     </div>
                     <div class="p-4 bg-slate-50 rounded-lg">
                         <p class="text-xs italic text-gray-500">Note: Playwright's WebKit is a native build, ensuring 100% Safari-like rendering accuracy.</p>
