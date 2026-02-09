@@ -16,6 +16,7 @@ export const pages = [
   { id: "page16", title: "API Testing", theme: "Connectivity" },
   { id: "page17", title: "CI & Infrastructure", theme: "Scale" },
   { id: "page18", title: "Reports & Analysis", theme: "Insights" },
+  { id: "page19", title: "Infographics", theme: "Visuals" },
   { id: "page12", title: "The TCO Matrix", theme: "Strategy" },
 ];
 
@@ -346,6 +347,30 @@ projects: [
                     <h4 class="font-bold text-indigo-600 mb-2">Cypress Studio</h4>
                     <p class="text-xs text-gray-600 mb-4">An experimental feature (now stable-ish) that allows you to "Record" steps inside the Test Runner GUI. It appends the code directly to your spec file.</p>
                     <p class="text-[10px] text-amber-600 mt-2 font-bold">⚠️ Note: Often produces brittle CSS/ID-based selectors compared to Playwright's role-based approach.</p>
+                </div>
+            </div>
+        </div>`,
+
+  page19: `
+        <div class="max-w-6xl">
+            <h2 class="text-4xl font-black text-gray-900 mb-2">Visual Summaries</h2>
+            <p class="text-gray-500 mb-10">High-level architectural comparisons and strategic matrices.</p>
+            
+            <div class="space-y-12">
+                <!-- Infographic 1 -->
+                <div class="bg-white p-4 rounded-3xl shadow-sm border">
+                    <h3 class="font-bold text-xl text-gray-800 mb-4 px-2">The 2025-2026 Automated Testing Showdown</h3>
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-50 border-2 border-dashed border-gray-200 min-h-[400px] flex items-center justify-center group">
+                        <img src="images/infographic-1.png" alt="Playwright vs Cypress 2025 Showdown Infographic" class="w-full h-auto object-contain group-hover:scale-[1.01] transition-transform duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-8\'><p class=\'text-gray-400 font-bold mb-2\'>Image Not Found</p><p class=\'text-xs text-gray-500\'>Please save the first image as <code>images/infographic-1.png</code></p></div>'">
+                    </div>
+                </div>
+
+                <!-- Infographic 2 -->
+                <div class="bg-white p-4 rounded-3xl shadow-sm border">
+                    <h3 class="font-bold text-xl text-gray-800 mb-4 px-2">Strategic Battle for Supremacy</h3>
+                    <div class="relative overflow-hidden rounded-2xl bg-gray-50 border-2 border-dashed border-gray-200 min-h-[400px] flex items-center justify-center group">
+                        <img src="images/infographic-2.png" alt="Cypress vs Playwright Strategic Battle Infographic" class="w-full h-auto object-contain group-hover:scale-[1.01] transition-transform duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-8\'><p class=\'text-gray-400 font-bold mb-2\'>Image Not Found</p><p class=\'text-xs text-gray-500\'>Please save the second image as <code>images/infographic-2.png</code></p></div>'">
+                    </div>
                 </div>
             </div>
         </div>`,
