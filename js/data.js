@@ -17,6 +17,8 @@ export const pages = [
   { id: "page17", title: "CI & Infrastructure", theme: "Scale" },
   { id: "page18", title: "Reports & Analysis", theme: "Insights" },
   { id: "page19", title: "Infographics", theme: "Visuals" },
+  { id: "page20", title: "Data Table", theme: "Reference" },
+  { id: "page21", title: "View PDF", theme: "Showcase" },
   { id: "page12", title: "The TCO Matrix", theme: "Strategy" },
 ];
 
@@ -374,6 +376,264 @@ projects: [
                         <img src="images/infographic-2.png" alt="Cypress vs Playwright Strategic Battle Infographic" class="w-full h-auto object-contain group-hover:scale-[1.01] transition-transform duration-500">
                     </div>
                 </div>
+            </div>
+        </div>`,
+
+  page20: `
+        <div class="max-w-7xl">
+            <h2 class="text-4xl font-black text-gray-900 mb-2">2025–2026 Technical Comparison</h2>
+            <p class="text-gray-500 mb-10">Comprehensive feature analysis with source citations.</p>
+            
+            <div class="bg-white rounded-3xl shadow-lg border overflow-hidden">
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm">
+                        <thead>
+                            <tr class="bg-gradient-to-r from-slate-50 to-slate-100 border-b-2 border-slate-200">
+                                <th class="px-6 py-4 text-left font-black text-gray-700 uppercase text-xs tracking-wide w-40">Feature</th>
+                                <th class="px-6 py-4 text-left font-black text-indigo-600 uppercase text-xs tracking-wide">Cypress</th>
+                                <th class="px-6 py-4 text-left font-black text-rose-600 uppercase text-xs tracking-wide">Playwright</th>
+                                <th class="px-6 py-4 text-left font-black text-gray-700 uppercase text-xs tracking-wide w-48">Sources</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Architecture</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>In-browser</strong>; runs inside the app's event loop.</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>Out-of-process</strong>; controls browser via <strong>WebSocket</strong> (CDP).</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://distantjob.com/blog/playwright-vs-cypress/" target="_blank" class="text-blue-600 hover:underline">Architectural Rift</a>, <a href="https://www.checklyhq.com/docs/comparisons/frameworks/playwright-vs-cypress/" target="_blank" class="text-blue-600 hover:underline">Checkly</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Browser Support</td>
+                                <td class="px-6 py-4 text-gray-600">Chromium-focused; Safari/WebKit is <strong>experimental</strong>.</td>
+                                <td class="px-6 py-4 text-gray-600">Native <strong>1:1 parity</strong> for Chromium, Firefox, and <strong>WebKit (Safari)</strong>.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://devin-rosario.medium.com/cypress-vs-playwright-the-essential-2025-comparison-for-developers-d2e40f20f450" target="_blank" class="text-blue-600 hover:underline">Browser Landscape</a>, <a href="https://bugbug.io/blog/test-automation-tools/cypress-vs-playwright/" target="_blank" class="text-blue-600 hover:underline">BugBug</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Language Support</td>
+                                <td class="px-6 py-4 text-gray-600">Strictly limited to <strong>JS and TypeScript</strong>.</td>
+                                <td class="px-6 py-4 text-gray-600">Supports <strong>JS, TS, Python, Java, and .NET (C#)</strong>.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://www.testingxperts.com/blog/playwright-vs-cypress/" target="_blank" class="text-blue-600 hover:underline">Language Ecology</a>, <a href="https://abstracta.us/blog/api-testing/playwright-vs-cypress/" target="_blank" class="text-blue-600 hover:underline">Abstracta</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Parallelization</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>Paid</strong>; requires Cypress Cloud for orchestration.</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>Free and native</strong>; includes built-in sharding/workers.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://currents.dev/posts/cypress-playwright-for-tech-leaders" target="_blank" class="text-blue-600 hover:underline">Concurrency</a>, <a href="https://javascript.plainenglish.io/playwright-vs-cypress-performance-benchmarks-the-2025-report-c2db402c7a55" target="_blank" class="text-blue-600 hover:underline">Economic Impact</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Execution Speed</td>
+                                <td class="px-6 py-4 text-gray-600">Slower; <strong>~23% slower</strong> in real-world benchmarks.</td>
+                                <td class="px-6 py-4 text-gray-600">Leading speed; up to <strong>4x faster</strong> in complex workflows.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://javascript.plainenglish.io/playwright-vs-cypress-performance-benchmarks-the-2025-report-c2db402c7a55" target="_blank" class="text-blue-600 hover:underline">Performance</a>, <a href="https://www.qawolf.com/blog/why-qa-wolf-chose-playwright-over-cypress" target="_blank" class="text-blue-600 hover:underline">QA Wolf</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Local Debugging</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>Time-travel debugger</strong> with live DOM snapshots.</td>
+                                <td class="px-6 py-4 text-gray-600">UI Mode and Inspector; artifacts-based.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://bugbug.io/blog/test-automation-tools/cypress-vs-playwright/" target="_blank" class="text-blue-600 hover:underline">Debugging</a>, <a href="https://www.accelq.com/blog/cypress-vs-playwright/" target="_blank" class="text-blue-600 hover:underline">Dev Experience</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">CI Debugging</td>
+                                <td class="px-6 py-4 text-gray-600">Screenshots and video only.</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>Trace Viewer</strong> with network logs and DOM snapshots.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://dev.to/testdino01/playwright-vs-cypress-solving-real-test-automation-challenges-4e8m" target="_blank" class="text-blue-600 hover:underline">CI/CD Debugging</a>, <a href="https://playwright.dev/" target="_blank" class="text-blue-600 hover:underline">Playwright Docs</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Mobile Testing</td>
+                                <td class="px-6 py-4 text-gray-600">Limited to <strong>viewport resizing</strong>.</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>Native emulation</strong> of mobile WebKit and touch events.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://devin-rosario.medium.com/cypress-vs-playwright-the-essential-2025-comparison-for-developers-d2e40f20f450" target="_blank" class="text-blue-600 hover:underline">Mobile Matrix</a>, <a href="https://www.testingxperts.com/blog/playwright-vs-cypress/" target="_blank" class="text-blue-600 hover:underline">Testing Trends</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">AI Readiness</td>
+                                <td class="px-6 py-4 text-gray-600">Experimental <strong><code>cy.prompt()</code></strong>.</td>
+                                <td class="px-6 py-4 text-gray-600">Three official <strong>AI agents</strong> (Planner, Generator, Healer).</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://www.apsense.com/article/comprehensive-comparison-playwright-vs-cypress-in-2025.html" target="_blank" class="text-blue-600 hover:underline">AI Agents</a>, <a href="https://abstracta.us/blog/api-testing/playwright-vs-cypress/" target="_blank" class="text-blue-600 hover:underline">Integration</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Component Testing</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>Mature and stable</strong>; supports all major frameworks.</td>
+                                <td class="px-6 py-4 text-gray-600"><strong>Experimental</strong>; lacks stable support for Angular.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://docs.cypress.io/guides/component-testing/overview" target="_blank" class="text-blue-600 hover:underline">Component Mode</a>, <a href="https://playwright.dev/docs/test-components" target="_blank" class="text-blue-600 hover:underline">PW Support</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">Dependency Weight</td>
+                                <td class="px-6 py-4 text-gray-600">Heavy <strong>Electron app</strong> (~500MB); 160+ dependencies.</td>
+                                <td class="px-6 py-4 text-gray-600">Lightweight <strong>Node.js package</strong> (~10MB); 1 dependency.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://www.qawolf.com/blog/why-qa-wolf-chose-playwright-over-cypress" target="_blank" class="text-blue-600 hover:underline">Dependency</a>, <a href="https://currents.dev/posts/cypress-playwright-for-tech-leaders" target="_blank" class="text-blue-600 hover:underline">Footprint</a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="px-6 py-4 font-bold text-gray-800">API Testing</td>
+                                <td class="px-6 py-4 text-gray-600">Built-in <strong><code>cy.request()</code></strong> but browser-bound.</td>
+                                <td class="px-6 py-4 text-gray-600">Robust <strong>isolated context</strong> separate from browser.</td>
+                                <td class="px-6 py-4 text-xs"><a href="https://thinksys.com/qa-testing/playwright-vs-selenium-vs-cypress/" target="_blank" class="text-blue-600 hover:underline">API Integration</a>, <a href="https://distantjob.com/blog/playwright-vs-cypress/" target="_blank" class="text-blue-600 hover:underline">DistantJob</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Use Cases Section -->
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Cypress Use Cases -->
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-3xl border-2 border-indigo-200">
+                    <h3 class="font-black text-2xl text-indigo-900 mb-4 flex items-center">
+                        <span class="text-3xl mr-3">🎯</span>
+                        Choose Cypress When...
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 font-bold mr-2">✓</span>
+                            <span><strong>Developer experience is critical</strong> – You need real-time visual debugging with time-travel capabilities</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 font-bold mr-2">✓</span>
+                            <span><strong>Component testing is a priority</strong> – You're building React, Vue, Angular, or Svelte apps and need stable component isolation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 font-bold mr-2">✓</span>
+                            <span><strong>JavaScript/TypeScript only team</strong> – Your entire stack is JS/TS with no need for polyglot testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 font-bold mr-2">✓</span>
+                            <span><strong>Simple single-page apps</strong> – Your app doesn't require multi-tab or complex cross-origin workflows</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 font-bold mr-2">✓</span>
+                            <span><strong>Existing Cypress investment</strong> – You have mature test suites and team expertise in Cypress</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-indigo-600 font-bold mr-2">✓</span>
+                            <span><strong>Chromium-first strategy</strong> – Safari/WebKit support is not a critical requirement for your users</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Playwright Use Cases -->
+                <div class="bg-gradient-to-br from-rose-50 to-pink-50 p-8 rounded-3xl border-2 border-rose-200">
+                    <h3 class="font-black text-2xl text-rose-900 mb-4 flex items-center">
+                        <span class="text-3xl mr-3">🚀</span>
+                        Choose Playwright When...
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-rose-600 font-bold mr-2">✓</span>
+                            <span><strong>Cross-browser testing is essential</strong> – You need native Safari/WebKit support for the 27% of users on Apple devices</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-rose-600 font-bold mr-2">✓</span>
+                            <span><strong>Multi-tab/multi-domain workflows</strong> – Your app requires testing complex scenarios across different origins</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-rose-600 font-bold mr-2">✓</span>
+                            <span><strong>Polyglot teams</strong> – You need to unify testing across Python, Java, .NET, and JavaScript codebases</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-rose-600 font-bold mr-2">✓</span>
+                            <span><strong>Performance and cost matter</strong> – You need free parallelism and 4x faster test execution to reduce CI costs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-rose-600 font-bold mr-2">✓</span>
+                            <span><strong>Mobile web testing</strong> – You need native mobile emulation with touch events and device-specific behaviors</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-rose-600 font-bold mr-2">✓</span>
+                            <span><strong>AI-driven test maintenance</strong> – You want self-healing tests with Playwright's official AI agents</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-rose-600 font-bold mr-2">✓</span>
+                            <span><strong>Combined UI and API testing</strong> – You need isolated API testing context alongside browser automation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-rose-600 font-bold mr-2">✓</span>
+                            <span><strong>Enterprise scalability</strong> – You're building high-velocity engineering teams with minimal infrastructure overhead</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Sources Section -->
+            <div class="mt-12 bg-slate-50 p-8 rounded-3xl border">
+                <h3 class="font-bold text-xl text-gray-800 mb-6">📚 Source Directory</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
+                    <p class="text-gray-700">• <a href="https://abstracta.us/blog/api-testing/playwright-vs-cypress/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Abstracta - Playwright vs Cypress: Key Differences 2025</a></p>
+                    <p class="text-gray-700">• <a href="https://www.accelq.com/blog/cypress-vs-playwright/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">ACCELQ - Cypress vs Playwright: Which Frontend Testing Tool Reigns Supreme</a></p>
+                    <p class="text-gray-700">• <a href="https://www.apsense.com/article/comprehensive-comparison-playwright-vs-cypress-in-2025.html" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">APSense (Devin Rosario) - Comprehensive Comparison Playwright vs Cypress in 2025</a></p>
+                    <p class="text-gray-700">• <a href="https://bondaracademy.com/blog/playwright-vs-cypress-how-to-make-a-right-decision" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Bondar Academy - Playwright vs Cypress: Choosing the UI Testing Framework</a></p>
+                    <p class="text-gray-700">• <a href="https://bugbug.io/blog/test-automation-tools/cypress-vs-playwright/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">BugBug.io - Cypress vs Playwright in 2026</a></p>
+                    <p class="text-gray-700">• <a href="https://www.checklyhq.com/docs/comparisons/frameworks/playwright-vs-cypress/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Checkly Docs - Playwright vs Cypress - Detailed comparison</a></p>
+                    <p class="text-gray-700">• <a href="https://currents.dev/posts/cypress-playwright-for-tech-leaders" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Currents.dev - Cypress vs Playwright for tech leaders: cost and risks analysis</a></p>
+                    <p class="text-gray-700">• <a href="https://www.cypress.io/pricing" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Cypress.io - Cypress Pricing and Features</a></p>
+                    <p class="text-gray-700">• <a href="https://dev.to/testdino01/playwright-vs-cypress-solving-real-test-automation-challenges-4e8m" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">DEV Community - Playwright vs Cypress: Solving Real Test Automation Challenges</a></p>
+                    <p class="text-gray-700">• <a href="https://distantjob.com/blog/playwright-vs-cypress/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">DistantJob - Playwright vs Cypress: When to Use Each and Why</a></p>
+                    <p class="text-gray-700">• <a href="https://www.functionize.com/blog/playwright-ui-testing" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Functionize - Playwright UI Testing: Strategy, Quality & Trends</a></p>
+                    <p class="text-gray-700">• <a href="https://ijcjournal.org/index.php/InternationalJournalOfComputer/article/view/2355" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">IJC (Anatolii Tymoshchuk) - The Evolution of Test Automation: From Selenium to Playwright</a></p>
+                    <p class="text-gray-700">• <a href="https://javascript.plainenglish.io/playwright-vs-cypress-performance-benchmarks-the-2025-report-c2db402c7a55" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">JavaScript in Plain English - Playwright vs Cypress Performance Benchmarks: 2025</a></p>
+                    <p class="text-gray-700">• <a href="https://devin-rosario.medium.com/cypress-vs-playwright-the-essential-2025-comparison-for-developers-d2e40f20f450" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Medium (Devin Rosario) - The Essential 2025 Comparison for Developers</a></p>
+                    <p class="text-gray-700">• <a href="https://momentic.ai/blog/playwright-vs-cypress-pros-and-cons" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Momentic - Playwright vs Cypress: Which Testing Tool Should You Use?</a></p>
+                    <p class="text-gray-700">• <a href="https://www.qawolf.com/blog/why-qa-wolf-chose-playwright-over-cypress" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">QA Wolf - Why We Chose Playwright Over Cypress</a></p>
+                    <p class="text-gray-700">• <a href="https://www.reddit.com/r/QualityAssurance/comments/1o2fiso/do_you_feel_there_are_compelling_reasons_for_a/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Reddit (r/QualityAssurance) - Migration from Cypress to Playwright Thread</a></p>
+                    <p class="text-gray-700">• <a href="https://www.reddit.com/r/reactjs/comments/1oi844q/e2e_testing_cypress_vs_playwright/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Reddit (r/reactjs) - E2E Testing (Cypress VS Playwright) Thread</a></p>
+                    <p class="text-gray-700">• <a href="https://www.richard-seidl.com/en/blog/cypress-playwright" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">Richard Seidl - Migrating from Cypress to Playwright</a></p>
+                    <p class="text-gray-700">• <a href="https://www.testingxperts.com/blog/playwright-vs-cypress/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">TestingXperts - Playwright Vs Cypress: A Detailed Comparison</a></p>
+                    <p class="text-gray-700">• <a href="https://thinksys.com/qa-testing/playwright-vs-selenium-vs-cypress/" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-800 hover:underline">ThinkSys Inc - Playwright vs Selenium vs Cypress Comparison</a></p>
+                </div>
+            </div>
+        </div>`,
+
+  page21: `
+        <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between mb-6">
+                <div>
+                    <h2 class="text-4xl font-black text-gray-900 mb-2">View PDF</h2>
+                    <p class="text-gray-500">View and download the full presentation deck</p>
+                </div>
+                
+                <!-- Download Button -->
+                <a 
+                    href="assets/presentation.pdf" 
+                    download="Cypress-vs-Playwright-Presentation.pdf"
+                    class="bg-gradient-to-r from-indigo-600 to-rose-600 hover:from-indigo-700 hover:to-rose-700 text-white px-6 py-3 rounded-xl font-bold flex items-center space-x-2 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                    </svg>
+                    <span>Download PDF</span>
+                </a>
+            </div>
+            
+            <!-- PDF Viewer Container -->
+            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-slate-200">
+                <iframe 
+                    src="assets/presentation.pdf" 
+                    class="w-full border-0"
+                    style="height: 800px; min-height: 600px;"
+                    title="Cypress vs Playwright Presentation"
+                ></iframe>
+            </div>
+            
+            <!-- Action Buttons -->
+            <div class="mt-6 flex items-center justify-center space-x-4">
+                <a 
+                    href="assets/presentation.pdf" 
+                    target="_blank"
+                    class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-xl font-medium flex items-center space-x-2 transition-colors"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
+                    <span>Open in New Tab</span>
+                </a>
+                
+                <button 
+                    onclick="document.querySelector('iframe').requestFullscreen()"
+                    class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-xl font-medium flex items-center space-x-2 transition-colors"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                    </svg>
+                    <span>Fullscreen</span>
+                </button>
             </div>
         </div>`,
 
