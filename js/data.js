@@ -145,7 +145,9 @@ export const pageTemplates = {
                 <div class="space-y-8">
                     <div>
                         <h4 class="font-bold text-gray-400 uppercase text-[10px] mb-4">Browser Support Matrix</h4>
-                        <canvas id="browserChart"></canvas>
+                        <div class="chart-container">
+                            <canvas id="browserChart"></canvas>
+                        </div>
                     </div>
                     <div class="p-4 bg-slate-50 rounded-lg">
                         <p class="text-xs italic text-gray-500">Note: Playwright's WebKit is a native build, ensuring 100% Safari-like rendering accuracy.</p>
@@ -361,7 +363,7 @@ projects: [
                 <div class="bg-white p-4 rounded-3xl shadow-sm border">
                     <h3 class="font-bold text-xl text-gray-800 mb-4 px-2">The 2025-2026 Automated Testing Showdown</h3>
                     <div class="relative overflow-hidden rounded-2xl bg-gray-50 border-2 border-dashed border-gray-200 min-h-[400px] flex items-center justify-center group">
-                        <img src="images/infographic-1.png" alt="Playwright vs Cypress 2025 Showdown Infographic" class="w-full h-auto object-contain group-hover:scale-[1.01] transition-transform duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-8\'><p class=\'text-gray-400 font-bold mb-2\'>Image Not Found</p><p class=\'text-xs text-gray-500\'>Please save the first image as <code>images/infographic-1.png</code></p></div>'">
+                        <img src="images/infographic-1.png" alt="Playwright vs Cypress 2025 Showdown Infographic" class="w-full h-auto object-contain group-hover:scale-[1.01] transition-transform duration-500">
                     </div>
                 </div>
 
@@ -369,7 +371,7 @@ projects: [
                 <div class="bg-white p-4 rounded-3xl shadow-sm border">
                     <h3 class="font-bold text-xl text-gray-800 mb-4 px-2">Strategic Battle for Supremacy</h3>
                     <div class="relative overflow-hidden rounded-2xl bg-gray-50 border-2 border-dashed border-gray-200 min-h-[400px] flex items-center justify-center group">
-                        <img src="images/infographic-2.png" alt="Cypress vs Playwright Strategic Battle Infographic" class="w-full h-auto object-contain group-hover:scale-[1.01] transition-transform duration-500" onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'text-center p-8\'><p class=\'text-gray-400 font-bold mb-2\'>Image Not Found</p><p class=\'text-xs text-gray-500\'>Please save the second image as <code>images/infographic-2.png</code></p></div>'">
+                        <img src="images/infographic-2.png" alt="Cypress vs Playwright Strategic Battle Infographic" class="w-full h-auto object-contain group-hover:scale-[1.01] transition-transform duration-500">
                     </div>
                 </div>
             </div>
