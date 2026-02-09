@@ -10,6 +10,12 @@ export const pages = [
   { id: "page9", title: "Advanced Reporting", theme: "Insight" },
   { id: "page10", title: "Debug Artifacts", theme: "Evidence" },
   { id: "page11", title: "Code Generation", theme: "Automation" },
+  { id: "page13", title: "Critical Comparison", theme: "Analysis" },
+  { id: "page14", title: "Emulation & Environment", theme: "Simulation" },
+  { id: "page15", title: "Gherkin & Tagging", theme: "Organization" },
+  { id: "page16", title: "API Testing", theme: "Connectivity" },
+  { id: "page17", title: "CI & Infrastructure", theme: "Scale" },
+  { id: "page18", title: "Reports & Analysis", theme: "Insights" },
   { id: "page12", title: "The TCO Matrix", theme: "Strategy" },
 ];
 
@@ -346,7 +352,7 @@ projects: [
 
   page12: `
         <div class="max-w-5xl">
-            <h2 class="text-4xl font-black text-gray-900 mb-6 underline decoration-rose-500">The Strategic TCO Matrix</h2>
+            <h2 class="text-4xl font-black text-gray-900 mb-6 underline decoration-rose-500">The Strategic Total Cost of Ownership (TCO) Matrix</h2>
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
                 <div class="lg:col-span-1 bg-white p-8 rounded-3xl border shadow-sm">
                     <h3 class="text-xl font-black mb-6">ROI Factors</h3>
@@ -385,6 +391,429 @@ projects: [
                             <li>• You need to test on Safari (WebKit).</li>
                             <li>• Cross-origin (Domain A to Domain B) is vital.</li>
                             <li>• CI cost reduction is a top business KPI.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>`,
+
+  page13: `
+        <div class="max-w-5xl">
+            <h2 class="text-4xl font-black text-gray-900 mb-2">Critical Comparison & Killer Features</h2>
+            <p class="text-gray-500 mb-10">A brutally honest breakdown of where each tool shines and where it fails completely.</p>
+            
+            <div class="space-y-12">
+                <!-- Playwright Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-4 self-center">
+                         <h3 class="text-3xl font-black text-rose-600 mb-2">PLAYWRIGHT</h3>
+                         <p class="text-sm text-gray-500 font-medium">The Speed Demon</p>
+                    </div>
+                    <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-2xl border-l-4 border-green-500 shadow-sm">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">✅ The Good</h4>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li><strong>Blazing Fast:</strong> Uses CDP (Chrome DevTools Protocol) for direct browser communication.</li>
+                                <li><strong>Global Auto-Wait:</strong> Naturally waits for network, animations, and attachability.</li>
+                                <li><strong>Parallelism:</strong> Free sharding on any CI provider. 100% free.</li>
+                                <li><strong>Multi-Everything:</strong> Multiple tabs, origins, and user contexts in one test.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border-l-4 border-red-500 shadow-sm">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">❌ The Bad</h4>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li><strong>Strictness:</strong> Fails instantly if multiple elements match a locator (requires precise selectors).</li>
+                                <li><strong>Learning Curve:</strong> Requires understanding <code>async/await</code> and Promises deeply.</li>
+                                <li><strong>Community:</strong> Newer than Cypress, fewer "copy-paste" StackOverflow answers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cypress Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 pt-8 border-t border-gray-100">
+                    <div class="lg:col-span-4 self-center">
+                         <h3 class="text-3xl font-black text-indigo-600 mb-2">CYPRESS</h3>
+                         <p class="text-sm text-gray-500 font-medium">The Developer's Delight</p>
+                    </div>
+                    <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded-2xl border-l-4 border-green-500 shadow-sm">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">✅ The Good</h4>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li><strong>Time Travel:</strong> The best debugging experience in the industry. Snapshot every command.</li>
+                                <li><strong>Automatic Retries:</strong> Flakiness buffering is built into the command queue.</li>
+                                <li><strong>Documentation:</strong> Incredible docs and massive plugin ecosystem (thousands of plugins).</li>
+                                <li><strong>Simplicity:</strong> jQuery-like syntax is easy for junior devs to pick up.</li>
+                            </ul>
+                        </div>
+                        <div class="bg-white p-6 rounded-2xl border-l-4 border-red-500 shadow-sm">
+                            <h4 class="font-bold text-gray-800 mb-3 flex items-center gap-2">❌ The Bad</h4>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li><strong>Single Origin:</strong> Cannot visit google.com and then github.com in one test.</li>
+                                <li><strong>Performance:</strong> Slower due to in-browser execution model.</li>
+                                <li><strong>Limited Iframe Support:</strong> Native handling is clunky compared to Playwright's <code>frameLocator</code>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- The "Killer" Features -->
+                <div class="pt-10">
+                    <h3 class="text-2xl font-black text-slate-800 mb-6 text-center uppercase tracking-widest">✨ Exclusive Capabilities</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        
+                        <!-- Playwright Exclusive -->
+                        <div class="bg-slate-900 text-white p-8 rounded-3xl relative overflow-hidden">
+                            <div class="absolute -right-10 -top-10 bg-rose-500 w-32 h-32 rounded-full blur-3xl opacity-20"></div>
+                            <h4 class="text-xl font-bold text-rose-400 mb-4">Only in Playwright</h4>
+                            <ul class="space-y-4 text-xs font-mono">
+                                <li class="flex gap-3">
+                                    <span class="text-rose-500">GlobalAuth</span>
+                                    <span class="text-gray-400">Reuse signed-in state across ALL tests with <code>storageState</code>. Zero login GUI overhead.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-rose-500">WebKit</span>
+                                    <span class="text-gray-400">Testing on real Safari engine (Linux/Windows included). Cypress uses experiment.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-rose-500">Network</span>
+                                    <span class="text-gray-400">Full HTTP traffic control. Mock websockets, abort requests, modify headers.</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                         <!-- Cypress Exclusive -->
+                        <div class="bg-white border-2 border-indigo-100 p-8 rounded-3xl relative overflow-hidden shadow-lg">
+                            <div class="absolute -left-10 -bottom-10 bg-indigo-500 w-32 h-32 rounded-full blur-3xl opacity-10"></div>
+                            <h4 class="text-xl font-bold text-indigo-600 mb-4">Only in Cypress</h4>
+                            <ul class="space-y-4 text-xs font-mono text-gray-600">
+                                <li class="flex gap-3">
+                                    <span class="text-indigo-500 font-bold">Studio</span>
+                                    <span>Visual "Record & Playback" inside the test runner that appends code to your file.</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-indigo-500 font-bold">Component</span>
+                                    <span>Mount React/Vue components in isolation without a browser. (Playwright has this too, but Cypress is more mature).</span>
+                                </li>
+                                <li class="flex gap-3">
+                                    <span class="text-indigo-500 font-bold">Spies</span>
+                                    <span><code>cy.spy()</code> and <code>cy.stub()</code> are deeply integrated into the command chain logic.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`,
+
+  page14: `
+        <div class="max-w-4xl">
+            <h2 class="text-4xl font-black text-gray-900 mb-2">Emulation & Environment</h2>
+            <p class="text-gray-500 mb-10">Going beyond simple viewport resizing: mimicking real-world conditions.</p>
+            
+            <div class="grid grid-cols-1 gap-12">
+                <!-- Device Emulation -->
+                <div class="bg-white p-8 rounded-3xl border shadow-sm">
+                    <h3 class="font-bold text-xl text-gray-800 mb-6 flex items-center gap-2">📱 Mobile & Device Emulation</h3>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <span class="px-2 py-1 bg-rose-100 text-rose-700 text-[10px] font-bold rounded mb-2 inline-block">PLAYWRIGHT STRATEGY</span>
+                            <p class="text-sm text-gray-600 mb-4">Playwright doesn't just resize the window. It changes the <strong>User Agent</strong>, <strong>Pixel Ratio (DPI)</strong>, and enables <strong>Touch Events</strong>.</p>
+                            <div class="bg-slate-900 p-4 rounded-xl text-gray-300 font-mono text-xs overflow-x-auto">
+                                <span class="text-purple-400">const</span> { devices } = <span class="text-blue-400">require</span>(<span class="text-green-300">'@playwright/test'</span>);<br/><br/>
+                                <span class="text-gray-500">// in config</span><br/>
+                                use: {<br/>
+                                &nbsp;&nbsp;...devices[<span class="text-green-300">'iPhone 13 Pro'</span>],<br/>
+                                &nbsp;&nbsp;locale: <span class="text-green-300">'de-DE'</span>,<br/>
+                                &nbsp;&nbsp;geolocation: { longitude: 12.4, latitude: 41.8 },<br/>
+                                &nbsp;&nbsp;permissions: [<span class="text-green-300">'geolocation'</span>]<br/>
+                                }
+                            </div>
+                        </div>
+                        <div>
+                            <span class="px-2 py-1 bg-indigo-100 text-indigo-700 text-[10px] font-bold rounded mb-2 inline-block">CYPRESS STRATEGY</span>
+                            <p class="text-sm text-gray-600 mb-4">Primarily relies on <code>cy.viewport()</code>. To simulate touch or geolocation, you often need to stub browser APIs manually or use Chrome Debugger Protocol commands explicitly.</p>
+                            <div class="bg-indigo-50 p-4 rounded-xl text-indigo-900 font-mono text-xs overflow-x-auto">
+                                <span class="text-blue-600">cy</span>.viewport(<span class="text-green-600">'iphone-x'</span>);<br/><br/>
+                                <span class="text-gray-400">// Manual stubbing often needed</span><br/>
+                                <span class="text-blue-600">cy</span>.visit(<span class="text-green-600">'/'</span>, {<br/>
+                                &nbsp;&nbsp;onBeforeLoad(win) {<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span class="text-blue-600">cy</span>.stub(win.navigator.geolocation, <span class="text-green-600">'getCurrentPosition'</span>)...<br/>
+                                &nbsp;&nbsp;}<br/>
+                                });
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Network Conditions -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                     <div class="card-detailed">
+                        <h4 class="font-bold text-gray-700 mb-2">🌐 Network Throttling</h4>
+                        <p class="text-xs text-gray-500 mb-4">Simulating slow 3G/4G connections to test loading states.</p>
+                        
+                        <div class="space-y-4">
+                            <div class="border-l-2 border-rose-500 pl-4">
+                                <p class="text-[10px] font-bold text-rose-600 uppercase">Playwright</p>
+                                <p class="text-[10px] text-gray-600">Can connect to CDP session to throttle network conditions precisely.</p>
+                            </div>
+                            <div class="border-l-2 border-indigo-500 pl-4">
+                                <p class="text-[10px] font-bold text-indigo-600 uppercase">Cypress</p>
+                                <p class="text-[10px] text-gray-600">Can throttle network via <code>cy.intercept()</code> delays, but true connection throttling requires browser-level config.</p>
+                            </div>
+                        </div>
+                     </div>
+
+                     <div class="card-detailed">
+                        <h4 class="font-bold text-gray-700 mb-2">🌍 Timezone & Locator</h4>
+                        <p class="text-xs text-gray-500 mb-4">Critical for international testing (Currency, Dates).</p>
+                        
+                         <div class="space-y-4">
+                            <div class="border-l-2 border-rose-500 pl-4">
+                                <p class="text-[10px] font-bold text-rose-600 uppercase">Playwright</p>
+                                <p class="text-[10px] text-gray-600">Set <code>timezoneId</code> and <code>locale</code> in config. Affects <code>Intl</code> API instantly.</p>
+                            </div>
+                            <div class="border-l-2 border-indigo-500 pl-4">
+                                <p class="text-[10px] font-bold text-indigo-600 uppercase">Cypress</p>
+                                <p class="text-[10px] text-gray-600">Set <code>TZ</code> environment variable before launching the browser. Harder to switch per-test.</p>
+                            </div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>`,
+
+  page15: `
+        <div class="max-w-4xl">
+            <h2 class="text-4xl font-black text-gray-900 mb-2">Gherkin & Tagging Strategy</h2>
+            <p class="text-gray-500 mb-10">Organizing thousands of scenarios with metadata and execution filters.</p>
+            
+            <div class="grid grid-cols-1 gap-12">
+                <div class="bg-indigo-50 p-8 rounded-3xl border border-indigo-100">
+                    <h3 class="font-bold text-xl text-indigo-900 mb-4">Cypress Tagging (@badeball)</h3>
+                    <p class="text-sm text-gray-600 mb-4">Relies on preprocessor parsing. Tags are converted into mocha test configuration objects or skipped at the pre-compilation stage.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-[10px] font-bold uppercase text-indigo-400 mb-2">Feature File</p>
+                            <div class="bg-white p-4 rounded-xl text-xs font-mono border">
+                                <span class="text-purple-600">@smoke @login</span><br/>
+                                Feature: Authentication<br/><br/>
+                                &nbsp;&nbsp;<span class="text-purple-600">@desktop-only</span><br/>
+                                &nbsp;&nbsp;Scenario: Secure Login
+                            </div>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold uppercase text-indigo-400 mb-2">Execution Command</p>
+                            <div class="bg-slate-800 p-4 rounded-xl text-xs font-mono text-white">
+                                npx cypress run --env TAGS="not @wip and @smoke"
+                            </div>
+                            <p class="text-[10px] text-gray-500 mt-2 italic">Note: Boolean logic support depends on the specific preprocessor version/configuration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-rose-50 p-8 rounded-3xl border border-rose-100">
+                    <h3 class="font-bold text-xl text-rose-900 mb-4">Playwright Native Annotations</h3>
+                    <p class="text-sm text-gray-600 mb-4">With <code>playwright-bdd</code>, Gherkin tags are transpiled directly into Playwright's native annotation system (<code>test.skip()</code>, <code>test.tag()</code>).</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <p class="text-[10px] font-bold uppercase text-rose-400 mb-2">Special Tag Mapping</p>
+                            <ul class="text-xs space-y-2 font-mono bg-white p-4 rounded-xl border">
+                                <li class="flex justify-between"><span>@skip</span> <span class="text-gray-400">→ test.skip()</span></li>
+                                <li class="flex justify-between"><span>@fixme</span> <span class="text-gray-400">→ test.fixme()</span></li>
+                                <li class="flex justify-between"><span>@slow</span> <span class="text-gray-400">→ test.slow()</span></li>
+                                <li class="flex justify-between"><span>@serial</span> <span class="text-gray-400">→ test.describe.configure({mode:'serial'})</span></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p class="text-[10px] font-bold uppercase text-rose-400 mb-2">Execution Command</p>
+                            <div class="bg-slate-800 p-4 rounded-xl text-xs font-mono text-white">
+                                npx playwright test --grep "@smoke" --grep-invert "@mobile"
+                            </div>
+                            <p class="text-[10px] text-gray-500 mt-2 italic">Native support for Regex filtering makes it extremely powerful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`,
+
+  page16: `
+        <div class="max-w-4xl">
+            <h2 class="text-4xl font-black text-gray-900 mb-2">API Testing Architecture</h2>
+            <p class="text-gray-500 mb-10">Browser-loop execution vs. dedicated Node.js request runners.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Playwright API -->
+                 <div class="card-detailed border-t-4 border-rose-500">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Playwright APIRequest</h3>
+                    <span class="px-2 py-1 bg-green-100 text-green-700 text-[10px] font-bold rounded mb-4 inline-block">Runs in Node.js</span>
+                    
+                    <p class="text-sm text-gray-600 mb-6">Playwright treats API testing as a first-class citizen. It creates a dedicated <code>APIRequestContext</code> that does NOT require a browser window to be valid. It is fast, lightweight, and can share cookies with browser contexts.</p>
+                    
+                    <div class="bg-gray-900 p-4 rounded-xl text-gray-300 font-mono text-[10px] overflow-x-auto">
+                        <span class="text-purple-400">const</span> api = <span class="text-purple-400">await</span> request.newContext({<br/>
+                        &nbsp;&nbsp;baseURL: <span class="text-green-300">'https://api.github.com'</span>,<br/>
+                        &nbsp;&nbsp;extraHTTPHeaders: { Authorization: <span class="text-green-300">'token...'</span> }<br/>
+                        });<br/><br/>
+                        <span class="text-purple-400">const</span> res = <span class="text-purple-400">await</span> api.fetch(<span class="text-green-300">'/user/repos'</span>);<br/>
+                        expect(res.ok()).toBeTruthy();
+                    </div>
+
+                    <ul class="mt-4 space-y-2 text-xs text-gray-600">
+                        <li class="flex gap-2">⚡ <strong>Speed:</strong> Zero browser overhead. Comparable to Axios/Fetch.</li>
+                        <li class="flex gap-2">🔄 <strong>Hybrid:</strong> Easily pass state from API -> Browser (e.g. create data via API, verify in UI).</li>
+                    </ul>
+                </div>
+
+                <!-- Cypress API -->
+                <div class="card-detailed border-t-4 border-indigo-500">
+                    <h3 class="font-bold text-xl text-gray-800 mb-2">Cypress cy.request()</h3>
+                    <span class="px-2 py-1 bg-amber-100 text-amber-700 text-[10px] font-bold rounded mb-4 inline-block">Runs in Browser Loop</span>
+                    
+                    <p class="text-sm text-gray-600 mb-6"><code>cy.request()</code> is executed by the browser runner. While convenient within a UI test, it carries the overhead of the Cypress proxy and event loop. It is not designed for high-volume data setup.</p>
+                    
+                    <div class="bg-gray-100 p-4 rounded-xl text-gray-700 font-mono text-[10px] overflow-x-auto">
+                        <span class="text-blue-600">cy</span>.request({<br/>
+                        &nbsp;&nbsp;method: <span class="text-green-600">'GET'</span>,<br/>
+                        &nbsp;&nbsp;url: <span class="text-green-600">'/user/repos'</span>,<br/>
+                        &nbsp;&nbsp;headers: { Authorization: <span class="text-green-600">'token...'</span> }<br/>
+                        }).then((resp) => {<br/>
+                        &nbsp;&nbsp;expect(resp.status).to.eq(200)<br/>
+                        })
+                    </div>
+
+                    <ul class="mt-4 space-y-2 text-xs text-gray-600">
+                        <li class="flex gap-2">🐢 <strong>Speed:</strong> Slower than Node-based fetch due to proxying.</li>
+                        <li class="flex gap-2">🔗 <strong>Chaining:</strong> Must handle async values via <code>.then()</code> or aliases, not standard await.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>`,
+
+  page17: `
+        <div class="max-w-4xl">
+            <h2 class="text-4xl font-black text-gray-900 mb-2">CI & Infrastructure</h2>
+            <p class="text-gray-500 mb-10">Running at scale: Docker containers, shards, and cloud grids.</p>
+            
+            <div class="space-y-12">
+                <!-- Docker & Basics -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">🐳 Docker Containers</h4>
+                        <div class="space-y-4 text-xs text-gray-600">
+                            <div>
+                                <p class="font-bold text-indigo-600">cypress/included</p>
+                                <p>Pre-installed with Cypress, Chrome, Firefox, and Node. Plug-and-play but large.</p>
+                            </div>
+                            <div>
+                                <p class="font-bold text-rose-600">mcr.microsoft.com/playwright</p>
+                                <p>Optimized image. Contains all browser binaries (Chromium, WebKit, Firefox) + dependencies. Updated monthly.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-3">🧩 Parallelization Strategy</h4>
+                        <ul class="space-y-3 text-xs text-gray-600">
+                            <li class="flex justify-between items-center border-b pb-2">
+                                <span><strong>Cypress:</strong> Paid Cloud</span>
+                                <span class="bg-red-100 text-red-700 px-2 py-1 rounded text-[9px]">$$$</span>
+                            </li>
+                             <li class="flex justify-between items-center border-b pb-2">
+                                <span><strong>Playwright:</strong> CI Sharding</span>
+                                <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-[9px]">FREE</span>
+                            </li>
+                             <li class="flex justify-between items-center">
+                                <span><strong>Selenium Grid:</strong> Supported?</span>
+                                <span class="text-gray-400">Both (via wrappers)</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Deep Dive: Sharding -->
+                <div class="bg-slate-900 text-white p-8 rounded-3xl">
+                    <h3 class="font-bold text-xl mb-6 flex items-center gap-3">
+                        <span class="bg-rose-600 text-[10px] px-2 py-1 rounded">PLAYWRIGHT EXCLUSIVE</span>
+                        Zero-Config Sharding
+                    </h3>
+                    <p class="text-sm text-gray-300 mb-6">Playwright can split your test suite into chunks based on the remainder of the modulo operator. This means you can spin up 10 GitHub Action runners and run 1/10th of the suite on each <strong>without a central server</strong>.</p>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 font-mono text-xs">
+                         <div class="bg-slate-800 p-4 rounded-xl">
+                            <p class="text-gray-400 mb-2">// Runner 1</p>
+                            <code class="text-green-400">npx playwright test --shard=1/3</code>
+                        </div>
+                        <div class="bg-slate-800 p-4 rounded-xl">
+                            <p class="text-gray-400 mb-2">// Runner 2</p>
+                            <code class="text-green-400">npx playwright test --shard=2/3</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>`,
+
+  page18: `
+        <div class="max-w-4xl">
+            <h2 class="text-4xl font-black text-gray-900 mb-2">Reports & Analysis</h2>
+            <p class="text-gray-500 mb-10">Turning results into evidence: Standard formats and custom reporters.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Built-in -->
+                <div class="space-y-6">
+                    <h3 class="font-bold text-xl text-gray-800 border-b pb-2">Built-in Capabilities</h3>
+                    
+                    <div class="card-detailed border-l-4 border-indigo-500">
+                        <h4 class="font-bold text-indigo-600 text-sm mb-2">Cypress (Mocha)</h4>
+                        <p class="text-xs text-gray-600 mb-3">Defaults to terminal output (spec reporter). For HTML, you must install <code>mochawesome</code> and merge JSON files post-run.</p>
+                        <div class="flex gap-2">
+                             <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded text-[9px]">Terminal</span>
+                             <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded text-[9px]">JUnit</span>
+                        </div>
+                    </div>
+
+                    <div class="card-detailed border-l-4 border-rose-500">
+                        <h4 class="font-bold text-rose-600 text-sm mb-2">Playwright HTML</h4>
+                        <p class="text-xs text-gray-600 mb-3">Generates a fully search-able, filter-able, single-file HTML report containing all traces, videos, and screenshots. No plugins needed.</p>
+                        <div class="flex gap-2">
+                             <span class="bg-rose-100 text-rose-700 px-2 py-1 rounded text-[9px]">HTML (Native)</span>
+                             <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded text-[9px]">JSON/JUnit</span>
+                             <span class="bg-gray-100 text-gray-500 px-2 py-1 rounded text-[9px]">GitHub Annotations</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom / SaaS -->
+                <div class="space-y-6">
+                    <h3 class="font-bold text-xl text-gray-800 border-b pb-2">Advanced / SaaS</h3>
+                    
+                     <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                        <h4 class="font-bold text-gray-800 mb-2">Allure Report</h4>
+                        <p class="text-[10px] text-gray-500 mb-4">The industry standard for historical trending.</p>
+                        <div class="space-y-2 text-xs">
+                            <div class="flex justify-between">
+                                <span>Cypress Support</span>
+                                <span class="text-green-600 font-bold">✅ via Plugin</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Playwright Support</span>
+                                <span class="text-green-600 font-bold">✅ via Plugin</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-indigo-50 p-6 rounded-2xl border border-indigo-100">
+                        <h4 class="font-bold text-indigo-700 mb-2">Cypress Cloud</h4>
+                        <p class="text-[10px] text-gray-600 mb-2">The distinct advantage. If you pay, you get:</p>
+                        <ul class="list-disc pl-4 text-[10px] text-gray-600 space-y-1">
+                            <li>Flake detection & burnout analysis.</li>
+                            <li>Branch vs. Branch performance.</li>
+                            <li>Test Replay (Server-side time travel).</li>
                         </ul>
                     </div>
                 </div>
