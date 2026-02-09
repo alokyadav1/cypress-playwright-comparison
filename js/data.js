@@ -583,9 +583,9 @@ projects: [
 
   page21: `
         <div class="max-w-7xl mx-auto">
-            <div class="flex items-center justify-between mb-6">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-8">
                 <div>
-                    <h2 class="text-4xl font-black text-gray-900 mb-2">View PDF</h2>
+                    <h2 class="text-3xl md:text-4xl font-black text-gray-900 mb-2">View PDF</h2>
                     <p class="text-gray-500">View and download the full presentation deck</p>
                 </div>
                 
@@ -593,7 +593,7 @@ projects: [
                 <a 
                     href="assets/presentation.pdf" 
                     download="Cypress-vs-Playwright-Presentation.pdf"
-                    class="bg-gradient-to-r from-indigo-600 to-rose-600 hover:from-indigo-700 hover:to-rose-700 text-white px-6 py-3 rounded-xl font-bold flex items-center space-x-2 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                    class="bg-gradient-to-r from-indigo-600 to-rose-600 hover:from-indigo-700 hover:to-rose-700 text-white px-6 py-3 rounded-xl font-bold flex items-center justify-center space-x-2 shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
                 >
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -603,21 +603,20 @@ projects: [
             </div>
             
             <!-- PDF Viewer Container -->
-            <div class="bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-slate-200">
+            <div class="bg-white rounded-2xl md:rounded-3xl shadow-2xl overflow-hidden border-2 md:border-4 border-slate-200">
                 <iframe 
                     src="assets/presentation.pdf" 
-                    class="w-full border-0"
-                    style="height: 800px; min-height: 600px;"
+                    class="w-full border-0 h-[400px] md:h-[800px]"
                     title="Cypress vs Playwright Presentation"
                 ></iframe>
             </div>
             
             <!-- Action Buttons -->
-            <div class="mt-6 flex items-center justify-center space-x-4">
+            <div class="mt-8 flex flex-col md:flex-row items-center justify-center gap-4">
                 <a 
                     href="assets/presentation.pdf" 
                     target="_blank"
-                    class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-xl font-medium flex items-center space-x-2 transition-colors"
+                    class="w-full md:w-auto bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-xl font-medium flex items-center justify-center space-x-2 transition-colors"
                 >
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
@@ -627,7 +626,7 @@ projects: [
                 
                 <button 
                     onclick="document.querySelector('iframe').requestFullscreen()"
-                    class="bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-xl font-medium flex items-center space-x-2 transition-colors"
+                    class="w-full md:w-auto bg-slate-700 hover:bg-slate-600 text-white px-6 py-3 rounded-xl font-medium flex items-center justify-center space-x-2 transition-colors"
                 >
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
