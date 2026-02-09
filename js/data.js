@@ -819,22 +819,4 @@ projects: [
                 </div>
             </div>
         </div>`,
-
-  "ai-strategist": `
-        <div class="max-w-3xl">
-            <h2 class="text-4xl font-black text-gray-900 mb-2">Gemini Strategy Lab</h2>
-            <p class="text-gray-500 mb-8 italic text-sm">"Consult with the AI Architect to refine your organizational testing strategy."</p>
-            <div class="bg-white p-8 rounded-3xl shadow-2xl border border-indigo-50 space-y-6">
-                <div>
-                    <label class="block text-[10px] font-black text-gray-400 uppercase mb-2">Project Constraints & Stack</label>
-                    <textarea id="ai-input" class="w-full p-4 border rounded-2xl h-40 text-sm focus:ring-4 focus:ring-indigo-100 outline-none transition-all" placeholder="e.g. We are a Java-heavy enterprise moving to a React micro-frontend architecture. We need to run 500 tests in under 10 mins on GitHub Actions. Suggest a stack."></textarea>
-                </div>
-                <button id="ai-btn" class="w-full bg-indigo-600 text-white font-bold py-4 rounded-2xl hover:bg-indigo-700 hover:scale-[1.01] active:scale-[0.99] transition-all flex items-center justify-center gap-2">
-                    ✨ GENERATE ARCHITECTURAL REPORT
-                </button>
-            </div>
-            <div id="ai-response" class="mt-12 p-8 bg-slate-50 rounded-3xl border min-h-[300px] text-sm text-slate-700 leading-relaxed prose max-w-none">
-                <p class="text-slate-400 italic">Waiting for strategy request...</p>
-            </div>
-        </div>`,
 };
