@@ -8,12 +8,13 @@ The guide provides a deep-dive into the technical and strategic differences betw
 
 ## Key Comparison Areas
 
-- **Cucumber & BDD Support**: native vs. community-driven implementations.
+- **2025–2026 Technical Comparison**: A deep-dive data table analyzing Architecture, Browser Support, Parallelization, AI Readiness, and more with embedded third-party sources.
+- **Strategic Use Cases**: Dedicated analysis on when to choose Cypress (DX focus, Component Testing) vs. Playwright (Enterprise Scale, Cross-browser parity).
+- **Cucumber & BDD Support**: Native vs. community-driven implementations.
 - **Architectural Rift**: "In-Browser" (Cypress) vs. "Out-of-Process" (Playwright) runtime models.
-- **Performance & Concurrency**: Workers vs. Cloud parallelization and benchmark visualizations.
-- **Cross-Browser & Language Parity**: Multi-language support and native WebKit integration.
-- **Debugging Workflow**: Time-travel debugging vs. Trace viewing.
-- **Session & Auth Strategy**: Efficiency of storage states vs. session caching.
+- **Performance & Concurrency**: Free parallelism vs. Cloud-based orchestration.
+- **Debugging Workflow**: Time-travel debugging vs. Playwright's Trace Viewer.
+- **Presentation Hub**: Integrated PDF viewer for full-screen slide decks and high-fidelity infographics.
 - **TCO Matrix**: Long-term ROI factors, parallelization costs, and learning curves.
 
 ## Technical Implementation
@@ -29,14 +30,17 @@ The project follows a modular structure for easy maintenance and content updates
 
 ```text
 cypressPlaywrightComparison/
+├── assets/
+│   └── presentation.pdf # External slide deck and presentation materials
 ├── css/
-│   └── styles.css      # Custom animations and dashboard specific layouts
+│   └── styles.css       # Custom animations and dashboard specific layouts
+├── images/             # Visual assets and infographics
 ├── js/
-│   ├── app.js          # Core application logic and navigation handling
-│   ├── charts.js       # Chart.js configurations for performance benchmarks
-│   └── data.js         # Centralized repository for comparison content and HTML templates
-├── index.html          # Main dashboard shell and navigation sidebar
-└── README.md           # Project documentation
+│   ├── app.js           # Core application logic and navigation handling
+│   ├── charts.js        # Chart.js configurations for performance benchmarks
+│   └── data.js          # Repository for comparison content and HTML templates
+├── index.html           # Main dashboard shell and navigation sidebar
+└── README.md            # Project documentation
 ```
 
 ## Note
@@ -46,4 +50,4 @@ cypressPlaywrightComparison/
 
 ---
 
-_v2026.1 Enterprise Edition_
+_v2026.2 Enterprise Edition_

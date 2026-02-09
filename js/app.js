@@ -30,7 +30,31 @@ function switchPage(id) {
   state.currentPage = id;
   initNav();
   renderPage();
+  closeSidebar(); // Ensure sidebar closes on mobile after selection
   window.scrollTo(0, 0);
+}
+
+// Mobile Sidebar Logic
+function openSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("sidebar-overlay");
+  sidebar.classList.remove("-translate-x-full");
+  overlay.classList.remove("hidden");
+  setTimeout(() => overlay.classList.add("opacity-100"), 10);
+  document.body.classList.add("overflow-hidden");
+}
+
+function closeSidebar() {
+  const sidebar = document.getElementById("sidebar");
+  const overlay = document.getElementById("sidebar-overlay");
+  if (!sidebar || !overlay) return;
+
+  sidebar.classList.add("-translate-x-full");
+  overlay.classList.remove("opacity-100");
+  setTimeout(() => {
+    overlay.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden");
+  }, 300);
 }
 
 function renderPage() {
@@ -49,4 +73,15 @@ window.switchPage = switchPage;
 document.addEventListener("DOMContentLoaded", () => {
   initNav();
   renderPage();
+
+  // Mobile Menu Event Listeners
+  document
+    .getElementById("mobile-menu-toggle")
+    ?.addEventListener("click", openSidebar);
+  document
+    .getElementById("mobile-menu-close")
+    ?.addEventListener("click", closeSidebar);
+  document
+    .getElementById("sidebar-overlay")
+    ?.addEventListener("click", closeSidebar);
 });
