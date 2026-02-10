@@ -31,7 +31,8 @@ function switchPage(id) {
   initNav();
   renderPage();
   closeSidebar(); // Ensure sidebar closes on mobile after selection
-  window.scrollTo(0, 0);
+  const mount = document.getElementById("content-mount");
+  if (mount) mount.scrollTo(0, 0);
 }
 
 // Mobile Sidebar Logic
